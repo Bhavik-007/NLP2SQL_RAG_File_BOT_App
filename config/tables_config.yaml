@@ -1,0 +1,26 @@
+tables:
+  Customer_Purchase:
+    schema: "dbo"
+    full_name: "[dbo].[Customer_Purchase]"
+    description: "Customer purchase table containing customer demographics, purchase amount, ad click flag, actual label, and predicted label."
+    primary_key: "Customer_ID"
+    allowed_columns: ["Customer_ID","Age","City","Purchase_Amount","Ad_Click","Actual","Predicted"]
+  Product_Master:
+    schema: "dbo"
+    full_name: "[dbo].[Product_Master]"
+    description: "Product master table containing product names, categories, unit prices, and active status."
+    primary_key: "Product_ID"
+    allowed_columns: ["Product_ID","Product_Name","Category","Unit_Price","Is_Active"]
+  Sales_Order:
+    schema: "dbo"
+    full_name: "[dbo].[Sales_Order]"
+    description: "Sales order fact table containing customer, product, date, quantity, sales amount, sales channel, and region."
+    primary_key: "Order_ID"
+    allowed_columns: ["Order_ID","Customer_ID","Product_ID","Order_Date","Quantity","Sales_Amount","Sales_Channel","Region"]
+    relationships:
+      - from_column: "Product_ID"
+        to_table: "Product_Master"
+        to_column: "Product_ID"
+      - from_column: "Customer_ID"
+        to_table: "Customer_Purchase"
+        to_column: "Customer_ID"

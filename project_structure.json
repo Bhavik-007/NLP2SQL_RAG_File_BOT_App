@@ -1,0 +1,64 @@
+{
+    "root": [
+        {
+            "file_name": ".env",
+            "description": ""
+        },
+        {
+            "file_name": "Get_app_components.py",
+            "description": ""
+        },
+        {
+            "file_name": "requirements.txt",
+            "description": ""
+        }
+    ],
+    "app": [
+        {
+            "file_name": "requirements.txt",
+            "description": ""
+        }
+    ],
+    "config": [
+        {
+            "file_name": "settings.yaml",
+            "description": ""
+        },
+        {
+            "file_name": "tables_config.yaml",
+            "description": ""
+        }
+    ],
+    "app\\core": [
+        {
+            "file_name": "config.py",
+            "description": ""
+        },
+        {
+            "file_name": "security.py",
+            "description": ""
+        }
+    ],
+    "app\\engine": [
+        {
+            "file_name": "db_manager.py",
+            "description": ""
+        },
+        {
+            "file_name": "vector_search.py",
+            "description": ""
+        }
+    ],
+    "app\\services": [
+        {
+            "file_name": "bot_service.py",
+            "description": ""
+        }
+    ],
+    "app\\ui": [
+        {
+            "file_name": "main.py",
+            "description": ""
+        }
+    ]
+}

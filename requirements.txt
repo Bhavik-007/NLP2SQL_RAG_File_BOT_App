@@ -1,0 +1,14 @@
+streamlit
+langchain
+langchain-community
+langchain-ollama
+qdrant-client
+sqlalchemy
+pyodbc
+pandas
+pyyaml
+python-dotenv
+sentence-transformers
+pymongo
+pypdf
+python-docx

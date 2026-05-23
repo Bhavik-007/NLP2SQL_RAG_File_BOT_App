@@ -1,0 +1,16 @@
+streamlit
+fastapi
+uvicorn
+pyodbc
+sqlalchemy
+pandas
+qdrant-client
+sentence-transformers
+pyyaml
+python-dotenv
+langchain
+langchain-community
+langchain-ollama
+pymongo
+pypdf
+python-docx

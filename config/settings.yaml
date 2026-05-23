@@ -1,0 +1,33 @@
+app_metadata:
+  name: "Enterprise-NLP-SQL-Bot"
+  version: "1.0.0"
+
+ollama:
+  base_url: "http://localhost:11434"
+  model: "llama3"
+  temperature: 0.0
+
+qdrant:
+  host: "localhost"
+  port: 6333
+  collection_name: "db_metadata"
+
+database:
+  # Examples:
+  # - Local default instance: "localhost"
+  # - Local SQL Express: "localhost\\SQLEXPRESS"
+  # - TCP port: "tcp:localhost,1433"
+  # - Remote/default instance: "tcp:SERVER_NAME,1433"
+  server: "localhost"
+  database: "test"
+  driver: "ODBC Driver 17 for SQL Server"
+  trusted_connection: "yes" # Enables Windows Authentication
+  encrypt: "no"
+  trust_server_certificate: "yes"
+  connection_timeout: 30
+  pooling:
+    enabled: true
+    pool_size: 5
+    max_overflow: 10
+    pool_timeout: 30
+  query_timeout: 30

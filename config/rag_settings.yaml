@@ -1,0 +1,12 @@
+rag:
+  collection_name: "document_chunks"
+  chunk_size: 900
+  chunk_overlap: 150
+  top_k: 4
+  supported_file_types: ["txt", "md", "csv", "pdf", "docx"]
+
+mongodb:
+  uri: "mongodb://localhost:007"
+  database: "nlp_sql_bot"
+  files_collection: "document_files"
+  history_collection: "document_chat_history"

@@ -1,0 +1,12 @@
+Step 1 :- Activate Virtual environment:-
+.venv\Scripts\activate
+
+Step 2 :- Run main pp/ui/main.py entire script 
+
+App Run by executing below url in same:- 
+.\.venv\Scripts\python.exe -m streamlit run app/ui/main.py
+
+optional:
+streamlit run app/ui/main.py
+
+
