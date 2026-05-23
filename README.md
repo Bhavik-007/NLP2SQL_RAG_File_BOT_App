@@ -143,7 +143,7 @@ Example:
 ```yaml
 database:
   server: "localhost"
-  database: "Jarvis_dev"
+  database: "test"
   driver: "ODBC Driver 17 for SQL Server"
   trusted_connection: "yes"
   encrypt: "no"
@@ -327,7 +327,7 @@ MongoDB is optional. It stores:
 Start MongoDB locally or update:
 
 ```env
-MONGODB_URI=mongodb://localhost:27017
+MONGODB_URI=mongodb://localhost:007
 ```
 
 If MongoDB is unavailable, the app continues running and skips persistence.
@@ -378,7 +378,7 @@ SQL_TRUSTED_CONNECTION=yes
 SQL_ENCRYPT=no
 SQL_TRUST_SERVER_CERTIFICATE=yes
 SQL_CONNECTION_TIMEOUT=5
-MONGODB_URI=mongodb://localhost:27017
+MONGODB_URI=mongodb://localhost:007
 ```
 
 ## Example SQL Assistant Questions
